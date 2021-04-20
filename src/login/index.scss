@@ -1,0 +1,40 @@
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: #1f1d2b;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.login__name,
+.login__password {
+    background: #2d303e;
+    border: 1px solid #393c49;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 14px 42px;
+    color: #abbbc2;
+    color: #abbbc2;
+    font-size: 16px;
+    margin-bottom: 10px;
+    &::placeholder {
+        color: #abbbc2;
+        font-size: 16px;
+    }
+}
+.send {
+    background: #ea7c69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    &:active{
+        transform: translateY(-5px);
+    }
+}

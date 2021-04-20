@@ -1,0 +1,121 @@
+.cart__top {
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.cart__product {
+    display: flex;
+    align-items: center;
+    background: rgba(146, 144, 254, 0.2);
+    padding: 15px 20px;
+    border-radius: 13px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cart__empty{
+    text-align: center;
+
+}
+.remove__cart{
+    color: #fff;
+    background-color: transparent;
+    border:none;
+    outline:none;
+cursor: pointer;
+}
+.cart__title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+}
+.cart__description{
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+.cart__img img {
+    width: 110px;
+    height: 110px;
+}
+.cart__left,
+.cart__rigth {
+    display: flex;
+    align-items: center;
+}
+.cart__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.cart__name {
+    max-width: 150px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.cart__price {
+    color: #fff;
+    font-size: 14px;
+}
+.cart__buttoms {
+    display: flex;
+}
+.buttons__increment,
+.buttons__decrement {
+    &:active {
+        transform: translateY(-3px);
+    }
+}
+.buttons__increment,
+.buttons__decrement,
+.button__remove {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.total__count,
+.cart__item-price {
+    color: #fff;
+    font-size: 17px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.cart__img{
+    max-width: 100%;
+}
+.cart__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.cart__count,
+.cart__totalprice{
+    background: rgba(146, 144, 254, 0.2);
+    padding: 15px 20px;
+    border-radius: 13px;
+    color:#FFF;
+    font-weight: 700;
+    color:#fff
+}
+.cart__pay{
+    background: #ea7c69;
+    padding: 8px;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+    border-radius: 8px;
+    color:#f3f3f3;
+    max-width: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .cart__product{
+        flex-wrap: wrap;
+    }
+}

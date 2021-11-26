@@ -5,6 +5,7 @@ import App from './App';
 import firebase from 'firebase/app'
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
+
 firebase.initializeApp({
   apiKey: "AIzaSyDeG1LuUUWy72fdLlVaS--sUh6BqOsOGXs",
   authDomain: "store-9e14f.firebaseapp.com",
@@ -14,6 +15,7 @@ firebase.initializeApp({
   messagingSenderId: "557386366679",
   appId: "1:557386366679:web:d5aa3c4918a03579b07a92"
 });
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

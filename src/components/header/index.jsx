@@ -1,12 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import './index.scss'
+import './index.css'
 import logo from './../../assets/img/logo.svg'
 import { useSelector } from 'react-redux';
 import price from './../../assets/img/price.svg'
-const Header = () => {
+const Header = ({setSearchFood}) => {
     const { totalPrice, totalCount } = useSelector(({ cartReducer }) => cartReducer)
-
+    
     return (
         <header className="header">
             <NavLink to="/" className="logo">
@@ -19,7 +19,7 @@ const Header = () => {
                     </svg>
 
                 </div>
-                <input className="header__search" placeholder="Search for food, coffe, etc.." type="text" />
+                <input className="header__search" onChange={e => setSearchFood(e.target.value)} placeholder="Search for food, coffe, etc.." type="search" />
             </div>
         </header>
     )

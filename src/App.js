@@ -1,21 +1,18 @@
 import { Route } from 'react-router';
-import './app.scss'
+import './app.css'
 import Nambar from './components/navbar/index';
 import Home from './pages/home/home.jsx';
 import Header from './components/header/index';
-import Login from './login/index';
 import Cart from './pages/cart/index';
+import { useState } from 'react';
 function App() {
+  const [searchFood, setSearchFood] = useState('')
   return (
     <div className="wrapper">
           <Nambar />
-          <Header />
-          <Route exact path="/" render={() => <Home /> } />
+          <Header setSearchFood={setSearchFood}/>
+          <Route exact path="/" render={() => <Home searchFood={searchFood}/> } />
           <Route exact path="/cart" render={() => <Cart /> } />
-          <Route exact path="/login" render={() => <Login /> } />
-
-
-
     </div>
   );
 }

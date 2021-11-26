@@ -63,12 +63,7 @@ cursor: pointer;
 .cart__buttoms {
     display: flex;
 }
-.buttons__increment,
-.buttons__decrement {
-    &:active {
-        transform: translateY(-3px);
-    }
-}
+
 .buttons__increment,
 .buttons__decrement,
 .button__remove {

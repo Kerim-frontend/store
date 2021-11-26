@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.scss'
+import './index.css'
 const ProductBlock = ({id, imgUrl, name, price, addToCartPizza}) => {
   
     const onAddPizza = () => {
@@ -18,7 +18,6 @@ const ProductBlock = ({id, imgUrl, name, price, addToCartPizza}) => {
            <h3 className="product__name">{name}</h3>
            <div className="product__price">$ {price}</div>
            <button onClick={onAddPizza} className="product__addCart">add cart</button>
-
         </div>
     )
 }

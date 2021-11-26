@@ -13,10 +13,11 @@
     color: #abbbc2;
     color: #abbbc2;
     font-size: 16px;
-    &::placeholder {
-        color: #abbbc2;
-        font-size: 16px;
-    }
+   
+}
+.header__search::placeholder {
+    color: #abbbc2;
+    font-size: 16px;
 }
 .header__rigth {
     display: flex;

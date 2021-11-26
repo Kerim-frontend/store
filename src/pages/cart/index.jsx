@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import prev from './../../assets/img/prev.svg'
-import './index.scss'
+import './index.css'
 import CartItem from './../../components/cartItem/index';
 import { useDispatch, useSelector } from 'react-redux';
 import { plusCart, removeCart, minusCArt, clearCart } from './../../redux/actions/cart';
@@ -53,7 +53,7 @@ const Cart = () => {
                 <div className="cart__empty">
                     <h2 className="cart__title"> Cart is empty </h2>
                     <p className="cart__description">To order food, go to the main page.</p>
-                    <img className="cart__img" src="https://i1.wp.com/www.huratips.com/wp-content/uploads/2019/04/empty-cart.png?resize=603%2C288&ssl=1" alt="" />
+                    <img className="cart__img" src="https://i1.wp.com/www.huratips.com/wp-content/uploads/2019/04/empty-cart.png?resize=603%2C288&ssl=1" alt="empty" />
                 </div>
             )}
 

@@ -20,3 +20,8 @@ ul{
     margin: 0 auto;
     grid-gap: 5px;
 }
+@media (max-width: 768px) {
+    .wrapper{
+        padding: 0 10px;
+    }
+}

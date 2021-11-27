@@ -14,7 +14,7 @@ const CartItem = ({ id,price, name, img, totalPrice, totalCount, onRemoveItem, o
         <div className="cart__product">
             <div className="cart__left">
                 <div className="cart__img">
-                    <img src={img} alt="product" />
+                    <img  src={img} alt="product" />
                 </div>
                 <div className="cart__info">
                     <div className="cart__name">{name}</div>

@@ -38,6 +38,7 @@ cursor: pointer;
 .cart__img img {
     width: 110px;
     height: 110px;
+    object-fit: contain;
 }
 .cart__left,
 .cart__rigth {
@@ -48,9 +49,9 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    width: 150px;
 }
 .cart__name {
-    max-width: 150px;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
